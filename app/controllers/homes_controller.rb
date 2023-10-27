@@ -5,7 +5,7 @@ class HomesController < ApplicationController
   end
 
   def show
-    @home = Home.all
+    @home = Home.find_by(id: params["id"])
     render :show
   end
 
