@@ -21,5 +21,6 @@ class HomesController < ApplicationController
       address: params["address"],
       price: params["price"],
     )
+    render json: { "message" => "Created new home" }
   end
 end
